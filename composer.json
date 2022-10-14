@@ -1,9 +1,9 @@
 {
-    "name": "base/base",
+    "name": "basri/base",
     "type": "template",
     "description": "A project template to make creating new (type goes here) projects easier.",
     "keywords": ["template"],
-    "homepage": "https://github.com/HasanBasri06/Base.git",
+    "homepage": "https://github.com/HasanBasri06/Base",
     "license": "MIT",
     "authors": [
         {
