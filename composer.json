@@ -3,7 +3,7 @@
     "type": "template",
     "description": "A project template to make creating new (type goes here) projects easier.",
     "keywords": ["template"],
-    "homepage": "https://github.com/HasanBasri06/Base",
+    "homepage": "https://github.com/HasanBasri06/Base.git",
     "license": "MIT",
     "authors": [
         {
