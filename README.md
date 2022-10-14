@@ -9,4 +9,4 @@ bir yeni php projesine başlarken kurduğum sistemin bir benzerini sizlerle payl
 
 ``php -S localhost:8000 .`` komutu ile projenizi ayağa kaldırabilrsiniz
 
-daha sonrasında ``http://localhost/main`` linkinden yararlanarak projenizi ayağa kaldırablirsiniz
+daha sonrasında ``http://localhost/`` linkinden yararlanarak projenizi tarayıcınızda açabilirsiniz
