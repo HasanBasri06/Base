@@ -9,11 +9,8 @@ class WelcomeController extends Controller
     public function index()
     {
 
-        $db = (new Connect)->conn();
-
-        $users = $db->table("users")->get();
-
-        Controller::view("app", ["users" => $users]);
+        $methodName = explode("\\", __METHOD__);
+        Controller::view("app", ["classes" => $methodName[2]]);
     }
 
 }

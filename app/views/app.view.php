@@ -10,11 +10,14 @@
 
 </head>
 <body>
-    <h1>Sistemdeki Kullanıcılar</h1>
-    <?php foreach ($users as $user) : ?>
-        <ul>
-            <li><?= $user->name; ?></li>
-        </ul>
-    <?php endforeach; ?>
+    <div class="container" ng-app>
+        <div>
+            <h1 class="title">Welcome To Base Freamwork</h1>
+            <br>
+            <h3>Controller : <?= $classes; ?></h3>
+            <br>
+            <h1>&#127819;</h1>
+        </div>
+    </div>
 </body>
 </html>

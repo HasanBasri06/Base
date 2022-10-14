@@ -22,9 +22,11 @@ class Kernel
             if ($expReqUrl[$c] == $item) {
                 $className  = $path[$item]["controller"];
                 $methodName = $path[$item]["method"];
-                (new $className)->$methodName();
+                (new $className)->$methodName();                
             }
         }
+
+        
     }
 
     public static function integrated()
@@ -41,6 +43,9 @@ class Kernel
                 array_push(self::$integrated, '<script src="app/views/js/app.js"></script>');
             } elseif ($integrated["require"][$i] == "style") {
                 array_push(self::$integrated, '<link rel="stylesheet" href="app/views/css/style.css" />');
+            }
+            elseif($integrated["require"][$i] == "angularJs"){
+                array_push(self::$integrated, '<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>');
             }
             else{
                 throw new Exception("istenilen yapı sistemimizde bulunmuyor " . $integrated["require"][$i]);
