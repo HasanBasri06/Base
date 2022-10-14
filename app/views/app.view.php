@@ -10,6 +10,11 @@
 
 </head>
 <body>
-    <h1>Hello, <?= $name; ?></h1>
+    <h1>Sistemdeki Kullanıcılar</h1>
+    <?php foreach ($users as $user) : ?>
+        <ul>
+            <li><?= $user->name; ?></li>
+        </ul>
+    <?php endforeach; ?>
 </body>
 </html>
