@@ -5,8 +5,12 @@ kaybetmemek adına kullanılan sistemdir, peki ya küçük sistemler için (blog
 bir yeni php projesine başlarken kurduğum sistemin bir benzerini sizlerle paylaşıyorum. İyi çalışmalar.
 
 ## Kurulum
-``git clone https://github.com/HasanBasri06/Base.git`` komutunu istemcinizde çalıştırdığınız anda indirilen projeyi apache web sunucunuzun klasörüne kopyalayınız
+- ``git clone https://github.com/HasanBasri06/Base.git`` komutunu istemcinizde çalıştırdığınız anda indirilen projeyi apache web sunucunuzun klasörüne kopyalayınız
+- klasör dizininizde terminali açınız
+- Açılan terminalde ``php -S localhost:8000 -t .`` komutu ile projenizi ayağa kaldırabilrsiniz
+- ``http://localhost:8000/`` linkinden yararlanarak projenizi tarayıcınızda açabilirsiniz
 
-``php -S localhost:8000 .`` komutu ile projenizi ayağa kaldırabilrsiniz
 
-daha sonrasında ``http://localhost/`` linkinden yararlanarak projenizi tarayıcınızda açabilirsiniz
+
+
+
