@@ -8,3 +8,4 @@ bir yeni php projesine başlarken kurduğum sistemin bir benzerini sizlerle payl
 ``git clone https://github.com/HasanBasri06/Base.git`` komutunu istemcinizde çalıştırdığınız anda indirilen projeyi apache web sunucunuzun klasörüne kopyalayınız
 
 daha sonrasında ``http://localhost/base`` linkinden yararlanarak projenizi ayağa kaldırablirsiniz
+``php -S localhost:8000 .`` komutu ile projenizi ayağa kaldırabilrsiniz
