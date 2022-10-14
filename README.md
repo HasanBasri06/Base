@@ -10,7 +10,12 @@ bir yeni php projesine başlarken kurduğum sistemin bir benzerini sizlerle payl
 - Açılan terminalde ``php -S localhost:8000 -t .`` komutu ile projenizi ayağa kaldırabilrsiniz
 - ``http://localhost:8000/`` linkinden yararlanarak projenizi tarayıcınızda açabilirsiniz
 
+## Dökümantasyon
+* ### Router
+Bir web uygulamasında rotasyon işlemi aslında freamworkün yapı taşıdır. Base bu işlemi temelden alır eğer önemli uygulamalar geliştiriyor iseniz daha güçlü bir freamwok öneririz
 
 
 
-
+![alt text](/app/views/images/app_web.php.png)
+Yukarıda belirtilen rotasyon işlemi v1 dir. Base için ele alınmış basit bir router sistemidir. Evet üzgünüm dinamik bir rota yapısı değil, Henüz.
+Aslında web.php geriye bir array döndürüyor, döndürülen array içerisinde ilk değerimiz bizim endpointimiz, ilk endpointin içerisinde olan iki değer ise bizim controller ve methodumuz.

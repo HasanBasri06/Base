@@ -56,4 +56,30 @@ class Kernel
             echo $value;
         }
     }
+
+    public function cliRun($item)
+    {
+        // array(2) {
+        //     [0]=>
+        //     string(5) "basri"
+        //     [1]=>
+        //     string(10) "route:list"
+        //   }
+        if($item[0] != "basri"){
+            var_dump($item[0] . " geçerli komut değildir");
+        }
+
+        $expPath = explode(":", $item[1]);
+        
+        if($expPath[0] == "route" and $expPath[1] == "list"){
+            $path = require "./app/web.php";
+            foreach ($path as $key => $value) {
+                print(
+                    "'\033[32m".$key . "' \n   - \033[31m".$value['controller']."\033[0m\n   - \033[33m".$value['method']."\033[0m\n\n"
+                );
+
+            }
+            print("\n");
+        }
+    }
 }

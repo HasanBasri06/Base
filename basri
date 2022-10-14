@@ -1,2 +1,12 @@
 <?php
 
+use App\Kernel;
+
+$meta = $argv;
+
+define('DIR', $_SERVER["DOCUMENT_ROOT"]."/");
+
+require "vendor/autoload.php";
+
+(new Kernel)->cliRun($meta);
+

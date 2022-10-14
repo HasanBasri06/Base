@@ -3,6 +3,7 @@
 namespace App\Controller;
 use App\Controller\Controller;
 use App\Model\Connect;
+use App\Model\User;
 
 class WelcomeController extends Controller
 {
