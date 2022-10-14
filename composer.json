@@ -1,4 +1,17 @@
 {
+    "name": "base/base",
+    "type": "template",
+    "description": "A project template to make creating new (type goes here) projects easier.",
+    "keywords": ["template"],
+    "homepage": "https://github.com/HasanBasri06/Base",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hasan Basri",
+            "email": "hasannolur06@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "autoload": {
         "psr-4": {
             "App\\Controller\\": "app/controllers/",

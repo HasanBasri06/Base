@@ -12,10 +12,10 @@ bir yeni php projesine başlarken kurduğum sistemin bir benzerini sizlerle payl
 
 ## Dökümantasyon
 * ### Router
-Bir web uygulamasında rotasyon işlemi aslında freamworkün yapı taşıdır. Base bu işlemi temelden alır eğer önemli uygulamalar geliştiriyor iseniz daha güçlü bir freamwok öneririz
+Bir web uygulamasında rotasyon işlemi uygulamanızın yapı taşıdır. Base bu işlemi temelden alır eğer önemli uygulamalar geliştiriyor iseniz daha güçlü bir freamwork öneririz
 
 
 
-![alt text](/app/views/images/app_web.php.png)
+![alt text](/app/views/images/docs/app_web.php.png)
 Yukarıda belirtilen rotasyon işlemi v1 dir. Base için ele alınmış basit bir router sistemidir. Evet üzgünüm dinamik bir rota yapısı değil, Henüz.
 Aslında web.php geriye bir array döndürüyor, döndürülen array içerisinde ilk değerimiz bizim endpointimiz, ilk endpointin içerisinde olan iki değer ise bizim controller ve methodumuz.
