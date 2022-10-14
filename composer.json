@@ -1,10 +1,11 @@
 {
     "name": "basri/base",
     "type": "template",
-    "description": "A project template to make creating new (type goes here) projects easier.",
+    "description": "Yeni gelişen php freamworkü",
     "keywords": ["template"],
     "homepage": "https://github.com/HasanBasri06/Base",
     "license": "MIT",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Hasan Basri",
