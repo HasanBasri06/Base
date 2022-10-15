@@ -1,12 +1,21 @@
 {
-    "autoload": {
-        "psr-4": {
-            "App\\Controller\\": "app/controllers/",
-            "App\\":"app/",
-            "App\\Model\\":"app/models/"
+    "name": "hasan/base",
+    "description": "php base freamwork",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hasan Basri"
         }
-    },
+    ],
     "require": {
         "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\Controller\\":"app/controllers/",
+            "App\\Model\\":"app/models/",
+            "App\\":"app/"
+        }
     }
 }
