@@ -2,8 +2,6 @@
 
 namespace App\Controller;
 use App\Controller\Controller;
-use App\Model\Connect;
-use App\Model\User;
 
 class WelcomeController extends Controller
 {
@@ -12,6 +10,11 @@ class WelcomeController extends Controller
 
         $methodName = explode("\\", __METHOD__);
         Controller::view("app", ["classes" => $methodName[2]]);
+    }
+
+    public function test()
+    {
+        return "Hello World";
     }
 
 }

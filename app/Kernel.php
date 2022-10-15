@@ -22,7 +22,7 @@ class Kernel
             if ($expReqUrl[$c] == $item) {
                 $className  = $path[$item]["controller"];
                 $methodName = $path[$item]["method"];
-                (new $className)->$methodName();                
+                echo (new $className)->$methodName();                
             }
         }
 

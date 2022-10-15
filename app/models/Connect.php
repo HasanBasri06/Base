@@ -2,6 +2,8 @@
 
 namespace App\Model;
 
+use Exception;
+
 class Connect{
 
     private $pdo;
@@ -9,6 +11,8 @@ class Connect{
     private $where;
     private $orderBy;
     private $limit;
+
+    private $tableColumnsName = [];
 
     public function conn()
     {
@@ -44,6 +48,57 @@ class Connect{
     {
         $this->limit = $limit;
         return $this;
+    }
+
+    public function save(...$save)
+    {
+
+
+        $isHaveSql = "SELECT * FROM " . $this->table;
+        $isHaveQry = $this->conn()->pdo->query($isHaveSql);
+        $isHaveQry->execute();
+        $isHave = $isHaveQry->fetch(\PDO::FETCH_OBJ);
+
+
+        try {
+            if($isHave != false){
+                $tableColumnSql = "SHOW COLUMNS FROM " . $this->table;
+                $tableColumnQry = $this->conn()->pdo->query($tableColumnSql);
+                $tableColumnQry->execute();
+                foreach ($tableColumnQry->fetchAll(\PDO::FETCH_OBJ) as $value) {
+                    array_push($this->tableColumnsName, $value->Field);
+                }
+                $insertName = implode(",", $this->tableColumnsName);
+                $insertValue = implode(",:", $this->tableColumnsName);
+        
+                $insertName = str_replace("id,", "", $insertName);
+                $insertValue = str_replace("id,", "", $insertValue);
+                    
+            
+                $insertSql = "INSERT INTO " . $this->table . " (".$insertName.") VALUES (".$insertValue.") ";
+                $insertQry = $this->conn()->pdo->prepare($insertSql);
+        
+        
+                $key = array_search("id", $this->tableColumnsName);
+        
+                unset($this->tableColumnsName[$key]);
+        
+                $tableColName = array_values($this->tableColumnsName);
+             
+                for ($i=0; $i < count($tableColName); $i++) {     
+                    $insertQry->bindParam(":".$tableColName[$i], $save[$i]);
+                }
+                $insertQry->execute();
+            }
+            else{
+                throw new Exception("Bu Kullanıcı Zaten Var");
+            }
+        } catch (\Throwable $th) {
+            return $th->getMessage();
+        }
+
+
+        
     }
 
     public function get()

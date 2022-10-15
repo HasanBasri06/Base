@@ -7,8 +7,8 @@ return [
         "controller" => WelcomeController::class,
         "method" => "index"
     ],
-    "/deneme" => [
+    "/test" => [
         "controller" => WelcomeController::class,
-        "method" => "index"        
+        "method" => "test"        
     ],
 ];
