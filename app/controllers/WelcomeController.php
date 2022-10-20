@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 use App\Controller\Controller;
+use App\Model\Connect;
+use App\Model\User;
 
 class WelcomeController extends Controller
 {
@@ -14,7 +16,11 @@ class WelcomeController extends Controller
 
     public function test()
     {
-        return "Hello World";
+
+        $db = (new User)->table('users')->get();
+
+        var_dump($db);
+
     }
 
 }

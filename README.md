@@ -19,3 +19,25 @@ Bir web uygulamasında rotasyon işlemi uygulamanızın yapı taşıdır. Base b
 ![alt text](/app/views/images/docs/app_web.php.png)
 Yukarıda belirtilen rotasyon işlemi v1 dir. Base için ele alınmış basit bir router sistemidir. Evet üzgünüm dinamik bir rota yapısı değil, Henüz.
 Aslında web.php geriye bir array döndürüyor, döndürülen array içerisinde ilk değerimiz bizim endpointimiz, ilk endpointin içerisinde olan iki değer ise bizim controller ve methodumuz.
+
+### Controller
+Projenizin birçok işi üstlendiği ve ekranda gösterilecek olan verilerimizin işlendiği katmandır
+
+
+![alt text](/app/views/images/docs/controller1.png)
+Yukarıda görmüş olduğunuz bir controller dir, aslında bu basit bir controllerdir. namespace adlandırıması PSR-4 den alınmadır.
+
+### View
+View katmanı controller da işlenmiş veriyi ekranda güzel bir görüntüyle göstermeye yarar.
+
+```Controller::view("app", ["classes" => $methodName[2]]);```
+controllerda yazılmış olan bu methodumuzla controller verimizi view katmanına göndermişbulunuyoruz.
+
+### Models
+Model katmanı projemizde var olan entity'lerin veritabanına karşılık gelen katmandır. Genel CRUD işlemlerimizi bu katmana yapıyoruz
+
+### Veri Alma
+
+Controllerda yazıcağınız service işleminde eğerveritabanında bir veri amak gerekiyorsa bu işlemisizin için basitleştirdik 
+
+![alt text](/app/views/images/docs/db1.png)
