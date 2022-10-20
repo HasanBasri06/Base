@@ -41,3 +41,25 @@ Model katmanı projemizde var olan entity'lerin veritabanına karşılık gelen 
 Controllerda yazıcağınız service işleminde eğerveritabanında bir veri amak gerekiyorsa bu işlemisizin için basitleştirdik 
 
 ![alt text](/app/views/images/docs/db1.png)
+
+Yukarda görmüş olduğunuz işlem ORM ile yapılıyor. Bu işlem sayesinde veritabanındaki ```table('example')``` ile belirtilen tablodakibütün veriyi getirir.
+
+- Where komutu
+
+Eğer tüm veriyi çağırmak istemiyor iseniz where komutunu kullanabilrsiniz
+
+![alt text](/app/views/images/docs/db2.png)
+
+- Order By
+
+Eğer gelen veriyi bir sıraya sokmak istiyor iseniz ordeyBy methodunu kullanabilirsiniz.
+
+![alt text](/app/views/images/docs/db3.png)
+
+- Limit
+
+Eğer gelen veriyi limit koymak ister iseniz limit methodunu kullanabilirsiniz
+
+![alt text](/app/views/images/docs/db4.png)
+
+
