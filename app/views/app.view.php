@@ -10,14 +10,6 @@
 
 </head>
 <body>
-    <div class="container" ng-app>
-        <div>
-            <h1 class="title">Welcome To Base Freamwork</h1>
-            <br>
-            <h3>Controller : <?= $classes; ?></h3>
-            <br>
-            <h1>&#127819;</h1>
-        </div>
-    </div>
+    <h1>Hello There!</h1>
 </body>
 </html>

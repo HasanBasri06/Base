@@ -7,8 +7,13 @@ return [
         "controller" => WelcomeController::class,
         "method" => "index"
     ],
-    "/test" => [
+    "/post/{id}" => [
         "controller" => WelcomeController::class,
-        "method" => "test"        
+        "method" => "singlePost"
     ],
+    "/deneme" => [
+        "controller" => WelcomeController::class,
+        "method" => "index"
+    ],
+
 ];

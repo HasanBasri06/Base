@@ -15,7 +15,8 @@
         "psr-4": {
             "App\\Controller\\":"app/controllers/",
             "App\\Model\\":"app/models/",
-            "App\\":"app/"
+            "App\\":"app/",
+            "App\\Exeptions\\":"config/Exeptions/"
         }
     }
 }

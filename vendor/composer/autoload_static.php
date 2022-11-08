@@ -34,6 +34,7 @@ class ComposerStaticInit66a2d6ba451e3446a2596bae82463cb1
         'A' => 
         array (
             'App\\Model\\' => 10,
+            'App\\Exeptions\\' => 14,
             'App\\Controller\\' => 15,
             'App\\' => 4,
         ),
@@ -67,6 +68,10 @@ class ComposerStaticInit66a2d6ba451e3446a2596bae82463cb1
         'App\\Model\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/models',
+        ),
+        'App\\Exeptions\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/config/Exeptions',
         ),
         'App\\Controller\\' => 
         array (
