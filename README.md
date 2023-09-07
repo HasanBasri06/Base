@@ -1,6 +1,6 @@
 ## Genel Bakış
-Genellikle yeni bir php projesine başlıyacağım zaman biraz vakit kaybederim, url yapısının hazırlanması ve temel kod yapısının oturması vb. açıkcası 
-biraz zaman kaybettiriyor, Peki neden bir freamwork kulanmıyorum (laravel, symfony), genellikle bir freamwork kullanma amacı büyük projelerde küçük işlerle vakit
+Genellikle yeni bir php projesine başlıyacağım zaman biraz vakit kaybederim, url yapısının hazırlanması ve temel kod yapısının oturması vb. şeyler, açıkcası 
+biraz zaman kaybettiriyor, Peki neden bir freamwork kulanmıyorum (laravel, symfony). Genellikle bir freamwork kullanma amacı büyük projelerde küçük işlerle vakit
 kaybetmemek adına kullanılan sistemdir, peki ya küçük sistemler için (blog, portoy) gibi sayfalar için bir freamwork mü? kuralım, tabiki hayır. Bu projemde benim 
 bir yeni php projesine başlarken kurduğum sistemin bir benzerini sizlerle paylaşıyorum. İyi çalışmalar.
 
